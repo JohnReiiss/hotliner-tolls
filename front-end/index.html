@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SWEET ALERT 2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- /SWEET ALERT 2 CSS -->
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="src/img/hotliner-tools-logo-white.png" type="image/x-icon">
+    <!-- /FAVICON -->
+
+    <title>Hotliner Tools</title>
+
+    <!-- RESET STYLE -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <!-- / RESET STYLE -->
+
+    <!-- SIDEBAR STYLE -->
+    <link rel="stylesheet" href="src/css/sidebar.css" />
+    <!-- /SIDEBAR STYLE -->
+
+    <!-- HEADER STYLE -->
+    <link rel="stylesheet" href="src/css/header.css" />
+    <!-- /HEADER STYLE -->
+
+    <!-- DYNAMIC MENU STYLE -->
+    <link rel="stylesheet" href="src/css/dynamic-menu.css" />
+    <!-- /DYNAMIC MENU STYLE -->
+
+    <!-- DYNAMIC CARD STYLE -->
+    <link rel="stylesheet" href="src/css/dynamic-card-style.css" />
+    <!-- /DYNAMIC CARD STYLE -->
+
+    <!-- LOADING QR LISTENERS STYLE -->
+    <link rel="stylesheet" href="src/css/loading-qr-listeners.css">
+    <!-- /LOADING QR LISTENERS STYLE -->
+
+    <!-- LOADING SERIAL LISTENERS STYLE -->
+    <link rel="stylesheet" href="src/css/loading-serial-listeners.css">
+    <!-- /LOADING SERIAL LISTENERS STYLE -->
+
+    <!-- LOADING DYNAMIC DOTS QR STYLE -->
+    <link rel="stylesheet" href="src/css/loading-dynamic-dots-qr.css">
+    <!-- /LOADING DYNAMIC DOTS QR STYLE -->
+
+    <!-- LOADING DYNAMIC DOTS SERIAL STYLE -->
+    <link rel="stylesheet" href="src/css/loading-dynamic-dots-serial.css">
+    <!-- /LOADING DYNAMIC DOTS SERIAL STYLE -->
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- /BOOTSTRAP ICONS -->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /GOOGLE FONTS -->
+  </head>
+  <body>
+    <main class="container">
+      <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+          <a href="#">
+            <img
+              src="src/img/hotliner-tools-logo-white.png"
+              alt="Hotliner Logo"
+              class="logo-retracted"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              src="src/img/hotliner-tools-logo-white.png"
+              alt="Hotliner Logo"
+              class="logo-collapsed"
+            />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#" id="btn-qrcodes">
+                <i class="bi bi-qr-code-scan"></i>
+                <span class="link-text">QR CODES</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="btn-seriais">
+                <i class="bi bi-upc-scan"></i>
+                <span class="link-text">SERIAIS</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-usb-drive-fill"></i>
+                <span class="link-text">PDA</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header">
+        <h2 class="txt-header">Hotliner Tools</h2>
+
+        <div class="menu-toggle" id="menu-toggle">
+    <i class="bi bi-list"></i>
+    <i class="bi bi-x-lg"></i>
+  </div>
+  
+  <div class="menu-dropdown" id="menu-dropdown">
+  <a href="#" id="user-perfil">
+  <i class="bi bi-people-fill"></i> Perfil
+  <i class="bi bi-caret-down-fill collapse-icon" id="collapse-icon"></i>
+</a>
+
+
+  <div class="perfil-collapse" id="perfil-collapse"></div>
+  <!-- CONTEÚDO É INSERIDO DINAMICAMENTE POR userInfo.js -->
+
+  <a href="#" id="logout-link">
+    <i class="bi bi-box-arrow-right"></i> Logout
+  </a>
+</div>
+
+  <div class="main-content" id="main-content">
+  <!-- CONTEÚDO DYNAMIC CARD INJETADO DINAMICAMENTE -->
+</div>
+
+    </main>
+
+    <!-- SWEET ALERT 2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- /SWEET ALERT 2 JS -->
+
+    <!-- AUTH GUARD JS -->
+    <script src="src/js/authGuard.js"></script>
+    <!-- /AUTH GUARD JS -->
+
+    <!-- DYNAMIC SIDEBAR JS -->
+    <script src="src/js/dynamicSidebar.js"></script>
+    <!-- /DYNAMIC SIDEBAR JS -->
+
+    <!-- DYNAMIC MENU JS -->
+    <script src="src/js/dynamicMenu.js"></script>
+    <!-- /DYNAMIC MENU JS -->
+
+    <!-- QR CODE UI -->
+    <script type="module" src="src/js/qrCodeUI.js"></script>
+    <!-- /QR CODE UI -->
+
+    <!-- SERIAL CODE UI -->
+    <script type="module" src="src/js/serialCodeUI.js"></script>
+    <!-- /SERIAL CODE UI -->
+
+    <!-- MAIN JS -->
+    <script type="module" src="src/js/main.js"></script>
+    <!-- /MAIN JS -->
+
+    <!-- LOADING QR LISTENERS JS -->
+    <script type="module" src="src/js/loadingQrListeners.js"></script>
+    <!-- /LOADING QR LISTENERS JS -->
+
+    <!-- LOADING SERIAL LISTENERS JS -->
+    <script type="module" src="src/js/loadingSerialListeners.js"></script>
+    <!-- /LOADING SERIAL LISTENERS JS -->
+
+    <!-- DYNAMIC CARD JS -->
+    <script type="module" src="src/js/dynamicCards.js"></script>
+    <!-- /DYNAMIC CARD JS -->
+
+    <!-- LOGOUT JS -->
+    <script src="src/js/logout.js"></script>
+    <!-- /LOGOUT JS -->
+  </body>
+</html>

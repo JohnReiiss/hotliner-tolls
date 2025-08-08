@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SWEET ALERT 2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <!-- /SWEET ALERT 2 CSS -->
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- /FONT AWESOME -->
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="src/img/hotliner-tools-logo-white.png"
+      type="image/x-icon"
+    />
+    <!-- /FAVICON -->
+
+    <!-- LOGIN STYLE -->
+    <link rel="stylesheet" href="src/css/login-style.css" />
+    <!-- /LOGIN STYLE -->
+
+    <title>Hotliner Tools Login</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Crie a sua conta</h1>
+          <div class="logo-icon">
+            <img
+              src="src/img/hotliner-tools-logo-black.png"
+              alt="hotliner-tools-logo-black.png"
+            />
+          </div>
+          <span>ou então utilize suas credenciais para se registrar</span>
+          <input type="text" placeholder="Nome" />
+          <input type="matrícula" placeholder="matrícula" />
+          <input type="password" placeholder="Senha" />
+          <button>Registre-se</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-in">
+        <form>
+          <h1>Faça login</h1>
+          <div class="logo-icon">
+            <img
+              src="src/img/hotliner-tools-logo-black.png"
+              alt="hotliner-tools-logo-black.png"
+            />
+          </div>
+          <span>ou utilize as suas credenciais para logar</span>
+          <input type="matrícula" placeholder="matrícula" />
+          <input type="password" placeholder="Senha" />
+          <a href="#">Esqueceu sua senha? Recupere aqui.</a>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Bem-vindo de volta!</h1>
+            <p>Para continuar, faça login com suas credenciais corporativas</p>
+            <button class="hidden" id="login">Login</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Bem-vindo!</h1>
+            <p>Para continuar, registre-se com suas credenciais corporativas</p>
+            <button class="hidden" id="register">Registre-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SWEET ALERT 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- /SWEET ALERT 2 -->
+
+    <!-- LOGIN ANIMATION JS -->
+    <script src="src/js/loginAnimationScript.js"></script>
+    <!-- /LOGIN ANIMATION JS -->
+
+    <!-- AUTH REGISTER JS -->
+    <script src="src/js/authRegister.js"></script>
+    <!-- /AUTH REGISTER JS -->
+
+    <!-- AUTH LOGIN JS -->
+    <script src="src/js/authLogin.js"></script>
+    <!-- /AUTH LOGIN JS -->
+  </body>
+</html>

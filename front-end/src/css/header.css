@@ -1,0 +1,34 @@
+:root {
+  --header-bg-color: #5218b1;
+  --header-text-color: #fff;
+}
+
+.header {
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--header-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: var(--header-text-color);
+  z-index: 1100;
+  transition: padding-left 0.3s ease;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.sidebar ~ .header {
+  padding-left: 220px;
+}
+
+.sidebar.collapsed ~ .header {
+  padding-left: 80px;
+}

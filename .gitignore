@@ -1,0 +1,35 @@
+# 🌱 Ignorar arquivos de ambiente
+back-end/.env
+
+# 📦 Node.js (back-end)
+back-end/node_modules/
+back-end/package-lock.json
+back-end/npm-debug.log*
+back-end/yarn-debug.log*
+back-end/yarn-error.log*
+
+# 📜 Logs gerais
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# 💻 Configs de IDE (como VSCode)
+.vscode/
+
+# 🗑️ Arquivos temporários
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# 🧱 Front-end (futuro uso com bundlers, se necessário)
+front-end/dist/
+front-end/build/
+front-end/node_modules/
+front-end/.env
+
+# 📷 Thumbnails / arquivos do sistema operacional
+.DS_Store
+Thumbs.db
