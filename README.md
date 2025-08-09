@@ -176,9 +176,9 @@ Abra o arquivo `index.html` dentro da pasta `front-end` no navegador ou configur
 Caso precise de suporte ou queira contribuir, entre em contato:
 
 **Autor:** Johnatan Dos Santos Reis  
-📧 [johnatan.reiiss@icloud.com]
-📧 [johnatan.reis@grupomulti.com.br]
-📧 [linkedin.com/in/johnatan-Reis](https://www.linkedin.com/in/johnatan-dos-santos-reis-945092b7/)
-📧 [github.com/JohnReiiss](https://github.com/JohnReiiss)
+-📧 [johnatan.reiiss@icloud.com]
+-📧 [johnatan.reis@grupomulti.com.br]
+-📧 [linkedin.com/in/johnatan-Reis](https://www.linkedin.com/in/johnatan-dos-santos-reis-945092b7/)
+-📧 [github.com/JohnReiiss](https://github.com/JohnReiiss)
 
 ---
