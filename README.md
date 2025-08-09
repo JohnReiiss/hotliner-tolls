@@ -153,7 +153,7 @@ JWT_SECRET=chave_secreta
 ### 4. Inicie o servidor
 
 ```bash
-npm start
+npm start ou node server.js
 ```
 
 ### 5. Acesse a aplicação
