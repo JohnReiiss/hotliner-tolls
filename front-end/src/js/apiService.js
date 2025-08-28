@@ -92,3 +92,35 @@ export async function buscarUsuarioLogado(token) {
     return null;
   }
 }
+
+export async function verificarAuditoria(imei) {
+  try {
+    const response = await fetch(`${API_BASE_URL}/audit/verificar`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ imei }),
+    });
+
+    if (!response.ok) throw new Error("Erro na verificação da auditoria");
+    return await response.json();
+  } catch (error) {
+    console.error("Erro ao verificar auditoria:", error);
+    return { encontrado: false, mensagem: "Erro ao verificar auditoria." };
+  }
+}
+
+export async function excluirAuditoria(imei) {
+  try {
+    const response = await fetch(`${API_BASE_URL}/audit/excluir/${imei}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) throw new Error("Erro ao excluir auditoria");
+    return await response.json();
+  } catch (error) {
+    console.error("Erro ao excluir auditoria:", error);
+    return { sucesso: false, mensagem: "Erro ao excluir auditoria." };
+  }
+}

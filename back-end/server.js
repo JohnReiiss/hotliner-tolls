@@ -5,6 +5,7 @@ const qrCodeRoutes = require("./routes/qrCodeRoutes");
 const serialRoutes = require("./routes/serialRoutes");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
+const auditRoutes = require("./routes/auditRoutes");
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.use("/api/qrcode", qrCodeRoutes);
 app.use("/api/serial", serialRoutes);
 app.use("/api/login", authRoutes);
 app.use("/api/user", userRoutes);
+app.use("/api/audit", auditRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);

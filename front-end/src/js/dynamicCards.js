@@ -46,6 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 
+  document.getElementById("btn-audit").addEventListener("click", () => {
+    renderCard(
+      "AUDITORIA",
+      "Sistema para liberar novas auditorias de produtos.",
+      "bi-database-fill-gear",
+      "audit"
+    );
+  });
+
   mainContent.innerHTML = "";
 });
 
@@ -68,7 +77,9 @@ export function renderCard(title, description, iconClass, inputType) {
         <p>${description}</p>
         <input type="text" class="scan-input" placeholder="${
           inputType === "qrcode"
-            ? "Escaneie o QR Code"
+            ? "Digite ou escaneie o serial do QR Code"
+            : inputType === "audit"
+            ? "Digite ou escaneie o imei do produto para liberar a auditoria"
             : "Digite ou escaneie o número de série"
         }">
         <button class="scan-button">Processar</button>
@@ -82,8 +93,12 @@ export function renderCard(title, description, iconClass, inputType) {
     const input = dynamicCard.querySelector(".scan-input");
     const button = dynamicCard.querySelector(".scan-button");
 
-    if (input.placeholder.includes("QR Code")) {
+    if (inputType === "qrcode") {
       loadingQRListeners(button, input, dynamicCard);
+    } else if (inputType === "audit") {
+      import("./loadingAuditListener.js").then(({ loadingAuditListeners }) => {
+        loadingAuditListeners(button, input, dynamicCard);
+      });
     } else {
       loadingSerialListeners(button, input, dynamicCard);
     }
